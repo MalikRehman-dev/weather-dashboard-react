@@ -1,0 +1,37 @@
+.loading-spinner {
+  text-align: center;
+  margin: 30px auto;
+}
+
+.spinner {
+  width: 45px;
+  height: 45px;
+  margin: auto;
+  border: 5px solid #ffffff;
+  border-top: 5px solid #2563eb;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.loading-spinner p {
+  color: white;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 400px) {
+  .spinner {
+    width: 40px;
+    height: 40px;
+  }
+
+  .loading-spinner p {
+    font-size: 14px;
+  }
+}
